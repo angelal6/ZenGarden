@@ -36,16 +36,34 @@ header h2{
 .summary{
 	font-family: 'Shadows Into Light Two', cursive;
 	font-size: 1em;
+	
+}
+#zen-summary{
+	height:400px;
 	background-color: #b2b2b2;
-	height:200px;
+
 }
 p{
 	color:#726E75;
 }
-h3,h4{
+h3{
+	font-family: 'Shadows Into Light Two', cursive;
+	color:#eddfd4;
+}
+h4{
 	font-family: 'Shadows Into Light Two', cursive;
 	color:#726E75;
-	
+}
+#zen-preamble{
+	height:400px;
+	background-color: #726E75;
+}
+.preamble p{
+	color:#eddfd4;
+}
+.explanation h3{
+	font-family: 'Shadows Into Light Two', cursive;
+	color: #726e72;;
 
 }
 /* basic elements */
