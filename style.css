@@ -22,9 +22,30 @@ header{
 	background:url(images/walkonbeach.jpg);
 	height: 300px
 }
-h1{
+header h1{
 	font:'architects daughter', sans-serif;
-	font-size: ;
+	font-size: 2em;
+	color:#726E75;
+	padding:2%;
+}
+header h2{
+	font:'architects daughter', sans-serif;
+	font-size: 1em;
+	color:#726e75;
+	padding:2%;
+}
+.summary{
+	font:'Shadows Into Light Two', sans-serif;
+	font-size: 1em;
+	background-color: #b2b2b2;
+}
+p{
+	color:#726E75;
+}
+h3,h4{
+	font: 'architects daughter', sans-serif;
+	color:#726E75;
+	
 }
 /* basic elements */
 /* html {
