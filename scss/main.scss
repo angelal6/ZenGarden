@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light+Two&display=swap');
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+@import 'partials/layout'; // responsive grid and media queries
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #726E75; // 
+$color-2: #dddfdf; // 
+$color-3: #b2b2b2; // 
+$color-4: #e6e6e6; // 
+$color-5: #eddfd4; // 
+
+// additional colors
+
+$success: #ffffff; // 
+$alert: $color-3; // red
+
+// fonts
+$primary-font: 'Shadows Into Light Two', cursive;
+$secondary-font: 'Architects Daughter', cursive;
+
+/* -------------------------------- 
+
+xImages
+
+-------------------------------- */
+.images{
+    width: 300px;
+    height: 400px;
+    background-image: url("../assets//images/pexels-ben-mack-5326900.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  

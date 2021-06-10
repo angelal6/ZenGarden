@@ -7,17 +7,35 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light+Two&display=swap');
 
+
+
+
+
+
+
+
+
+header{
+	background:url(images/walkonbeach.jpg);
+	height: 300px
+}
+h1{
+	font:'architects daughter', sans-serif;
+	font-size: ;
+}
 /* basic elements */
-html {
+/* html {
 	margin: 0;
 	padding: 0;
 	}
 body { 
-	font: 75% georgia, sans-serif;
+	font: 75% 'shadows into light two', sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	color: #726E75; 
+	
 	margin: 0; 
 	padding: 0;
 	}
@@ -26,10 +44,10 @@ p {
 	text-align: justify;
 	}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	font: 'architects daughter', sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	color: #7D775C;
+	color: #726E75;
 	}
 a:link { 
 	font-weight: bold; 
@@ -51,9 +69,9 @@ abbr {
 
 
 /* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
+/* .page-wrapper { 
+	/* background: url() no-repeat top left;  */
+	/* padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
 	}
@@ -64,7 +82,7 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+	background:url(images/walkonbeach.jpg) no-repeat top left;
 	margin-top: 10px;
 	display: block;
 	width: 219px;
@@ -88,11 +106,12 @@ header h2 {
 	overflow: hidden;
 	}
 header {
+	background:url(images/walkonbeach.jpg) no-repeat top left;
 	padding-top: 20px;
 	height: 87px;
-}
+}  */
 
-.summary {
+/* .summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
@@ -191,4 +210,4 @@ footer a:link, footer a:visited {
 	right: 0; 
 	width: 148px; 
 	height: 110px;
-	}
+	} */
