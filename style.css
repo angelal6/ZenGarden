@@ -21,72 +21,107 @@ header{
 	
 }
 header h1{
-	font-family: 'Architects Daughter', cursive;;
+	font-family: 'Architects Daughter', cursive;
 	font-size: 2em;
 	color:#726E75;
 	padding:2%;
 	height:200px;
+	text-align: center;
 }
 header h2{
-	font-family: 'Architects Daughter', cursive;;
+	font-family: 'Architects Daughter', cursive;
 	font-size: 1em;
 	color:#726e75;
 	padding:2%;
+	text-align: center;
 }
 .summary{
 	font-family: 'Shadows Into Light Two', cursive;
 	font-size: 1em;
 	
 }
-#zen-summary{
-	height:400px;
-	background-color: #b2b2b2;
+#zen-summary{ 
+	text-align: center;
+	/* height:150px; */
+	/* background-color: #b2b2b2; */
 
 }
 p{
+	text-align: center;
 	color:#726E75;
 }
-h3{
-	font-family: 'Shadows Into Light Two', cursive;
-	color:#eddfd4;
+.preamble h3{
+	font-family: 'Architects Daughter', cursive;
+	color:#726E75;
+	text-align: center;
 }
 h4{
-	font-family: 'Shadows Into Light Two', cursive;
+	font-family: 'Architects Daughter', cursive;
 	color:#726E75;
 }
 #zen-preamble{
 	height:400px;
-	background-color: #726E75;
+	background-color:#e6e6e6;
+
 }
 #zen-explanation{
-	height:400px;
-	background-color:#eddfd4;;
+	height:450px;
+	background-color:#e6e6e6;
+	text-align: center;
+}
+.explanation p{
+	font-family: 'Shadows Into Light Two', cursive;
+	color:#726E75;
 }
 #zen-participation{
-	height:400px;
-	background-color:#e6e6e6 ;
+	height:500px;
+	background-color:#b2b2b2;
+	text-align: center;
 }
 .preamble p{
-	color:#eddfd4;
+	font-family: 'Shadows Into Light Two', cursive;
+	color:#726E75;
 }
 .explanation h3{
-	font-family: 'Shadows Into Light Two', cursive;
-	color: #726e72;;
+	font-family: 'Architects Daughter', cursive;
+	color: #726E75;
 
 }
 .benefits h3{
+	font-family: 'Architects Daughter', cursive;
+	color: #726e75;
+}
+.benefits p{
 	font-family: 'Shadows Into Light Two', cursive;
-	color: #726e72;;
-
+	color:#726E75;
+	text-align: center;
 }
 .participation h3{
+	font-family: 'Architects Daughter', cursive;
+	color:#726E75;
+}
+.participation p{
+	font-family: 'Shadows Into Light Two', cursive;
 	color:#726E75;
 }
 #zen-benefits{
 	height:400px;
-	background-color: #726E75;
-
+	background-color: #b2b2b2;;
+	text-align: center;
 }
+#zen-requirements{
+	height:875px;
+	background-color:  #eddfd4;;
+	text-align: center;
+}	
+.requirements h3{
+	font-family: 'Architects Daughter', cursive;
+	color:#726E75;
+}
+.requirements p{
+	font-family: 'Shadows Into Light Two', cursive;
+	color:#726E75;
+ }
 /* basic elements */
 /* html {
 	margin: 0;
