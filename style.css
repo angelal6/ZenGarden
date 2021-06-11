@@ -16,7 +16,7 @@ html {
 	padding: 0;
 	}
 header{
-	background:url(images/walkonbeach.jpg);
+	background:url(images/walkonbeach.jpg) no-repeat fixed center;
 	background-size: 400px 600px;
 	
 }
@@ -58,12 +58,33 @@ h4{
 	height:400px;
 	background-color: #726E75;
 }
+#zen-explanation{
+	height:400px;
+	background-color:#eddfd4;;
+}
+#zen-participation{
+	height:400px;
+	background-color:#e6e6e6 ;
+}
 .preamble p{
 	color:#eddfd4;
 }
 .explanation h3{
 	font-family: 'Shadows Into Light Two', cursive;
 	color: #726e72;;
+
+}
+.benefits h3{
+	font-family: 'Shadows Into Light Two', cursive;
+	color: #726e72;;
+
+}
+.participation h3{
+	color:#726E75;
+}
+#zen-benefits{
+	height:400px;
+	background-color: #726E75;
 
 }
 /* basic elements */
