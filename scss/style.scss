@@ -157,6 +157,11 @@ footer {
 a.designer-name{
 	text-decoration: none;
 }
-
-
+div#design-selection .select + nav{
+	display: none;
+}
+div#design-selection .select:hover +nav{
+display:block;
+position:absolute;
+}
 }

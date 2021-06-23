@@ -83,83 +83,90 @@ p {
     grid-row: 2;
   }
 }
-
-
-#zen-explanation {
+#zen-preamble #zen-preamble h3::before {
+  content: "";
+  background: #e6e6e6;
+  width: 100%;
+  height: 400px;
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  top: -100px;
+}
+#zen-preamble #zen-explanation {
   background-color: #e6e6e6;
   text-align: center;
 }
 @media screen and (min-width: 52em) {
-  #zen-explanation {
+  #zen-preamble #zen-explanation {
     background-color: #b2b2b2;
   }
 }
-
-#zen-participation {
+#zen-preamble #zen-participation {
   background-color: #b2b2b2;
   text-align: center;
 }
-
-h3 {
+#zen-preamble h3 {
   margin: 0;
   padding: 0.5em;
 }
-
-#zen-benefits {
+#zen-preamble #zen-benefits {
   background-color: #b2b2b2;
   text-align: center;
 }
 @media screen and (min-width: 52em) {
-  #zen-benefits {
+  #zen-preamble #zen-benefits {
     background-color: #eddfd4;
   }
 }
-
-#zen-requirements {
+#zen-preamble #zen-requirements {
   background-color: #eddfd4;
   text-align: center;
 }
-
-footer {
+#zen-preamble footer {
   font-family: "Architects Daughter", cursive;
   background-color: #726E75;
   display: flex;
   justify-content: center;
 }
 @media screen and (min-width: 52em) {
-  footer {
+  #zen-preamble footer {
     grid-column: 1/3;
   }
 }
-footer a {
+#zen-preamble footer a {
   padding: 1em;
 }
-
-.page-wrapper {
+#zen-preamble .page-wrapper {
   display: grid;
 }
 @media screen and (min-width: 52em) {
-  .page-wrapper {
+  #zen-preamble .page-wrapper {
     grid-template-columns: 2fr 1fr;
   }
-  .page-wrapper .main.supporting {
+  #zen-preamble .page-wrapper .main.supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1;
   }
-  .page-wrapper .intro {
+  #zen-preamble .page-wrapper .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column: 1/3;
   }
 }
-
-.wrapper {
+#zen-preamble .wrapper {
   background-color: #dddfdf;
 }
-
-a.designer-name {
+#zen-preamble a.designer-name {
   text-decoration: none;
+}
+#zen-preamble div#design-selection .select + nav {
+  display: none;
+}
+#zen-preamble div#design-selection .select:hover + nav {
+  display: block;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
