@@ -83,16 +83,6 @@ p {
     grid-row: 2;
   }
 }
-#zen-preamble #zen-preamble h3::before {
-  content: "";
-  background: #e6e6e6;
-  width: 100%;
-  height: 400px;
-  display: block;
-  border-radius: 100%;
-  position: relative;
-  top: -100px;
-}
 #zen-preamble #zen-explanation {
   background-color: #e6e6e6;
   text-align: center;
@@ -160,13 +150,6 @@ p {
 }
 #zen-preamble a.designer-name {
   text-decoration: none;
-}
-#zen-preamble div#design-selection .select + nav {
-  display: none;
-}
-#zen-preamble div#design-selection .select:hover + nav {
-  display: block;
-  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
