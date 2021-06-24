@@ -75,9 +75,7 @@ p {
   padding: 0.5em 0;
 }
 
-#zen-preamble {
-  background-color: #e6e6e6;
-}
+
 @media screen and (min-width: 52em) {
   #zen-preamble {
     grid-row: 2;
