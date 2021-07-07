@@ -22,15 +22,36 @@ xImages
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  cursor: url(svg/human-footprints2.png), auto;
 }
 
 header {
   background: url(images/walkonbeach.jpg) no-repeat fixed center;
   background-size: cover;
   height: 100vh;
+}
+header::before {
+  content: url(svg/cardinal-points.svg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: relative;
+  opacity: 90%;
+  top: 15px;
+  left: 20px;
+}
+@media screen and (min-width: 52em) {
+  header::before {
+    width: 75px;
+    height: 75px;
+    top: 50px;
+    left: 46px;
+    opacity: 25%;
+  }
 }
 @media screen and (min-width: 52em) {
   header {
@@ -43,6 +64,13 @@ header h1 {
 }
 header h2 {
   font-size: 28px;
+}
+
+a:not(.design-name, .designer-name, .design-archives li a, .zen-resources ul li a, footer a) {
+  color: #348aa7;
+  text-decoration: none;
+  background: url(svg/wave.svg);
+  padding-bottom: 4px;
 }
 
 h1,
@@ -60,10 +88,23 @@ h4 {
 .summary {
   font-family: "Shadows Into Light Two", cursive;
   font-size: 1em;
+  height: 0;
+  position: relative;
+  top: -95px;
+  width: 225px;
+  display: block;
+  margin: 0 auto;
+  z-index: 100;
 }
 @media screen and (min-width: 52em) {
   .summary {
-    grid-column: 2;
+    grid-column: 1/3;
+    height: auto;
+    position: initial;
+    background-color: #e6e6e6;
+    margin: 0;
+    width: auto;
+    padding-bottom: 25px;
   }
 }
 
@@ -75,79 +116,370 @@ p {
   padding: 0.5em 0;
 }
 
-
+#zen-preamble {
+  background-color: #e6e6e6;
+}
 @media screen and (min-width: 52em) {
   #zen-preamble {
     grid-row: 2;
   }
 }
-#zen-preamble #zen-explanation {
+
+#zen-preamble h3::before {
+  content: "";
+  background: #eddfd4;
+  width: 100%;
+  height: 275px;
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  top: -150px;
+  margin: 0 auto;
+  max-width: 275px;
+  margin-bottom: -35%;
+}
+@media screen and (min-width: 52em) {
+  #zen-preamble h3::before {
+    display: none;
+  }
+}
+
+#zen-explanation {
   background-color: #e6e6e6;
   text-align: center;
 }
 @media screen and (min-width: 52em) {
-  #zen-preamble #zen-explanation {
+  #zen-explanation {
     background-color: #b2b2b2;
   }
 }
-#zen-preamble #zen-participation {
+
+#zen-participation {
   background-color: #b2b2b2;
   text-align: center;
 }
-#zen-preamble h3 {
+
+h3 {
   margin: 0;
   padding: 0.5em;
 }
-#zen-preamble #zen-benefits {
+
+#zen-benefits {
   background-color: #b2b2b2;
   text-align: center;
 }
 @media screen and (min-width: 52em) {
-  #zen-preamble #zen-benefits {
+  #zen-benefits {
     background-color: #eddfd4;
+    grid-column: 1/3;
+    padding-bottom: 25px;
   }
 }
-#zen-preamble #zen-requirements {
+
+#zen-requirements {
   background-color: #eddfd4;
   text-align: center;
 }
-#zen-preamble footer {
+@media screen and (min-width: 52em) {
+  #zen-requirements {
+    grid-column: 1/3;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #zen-requirements h3 {
+    grid-column: 1/3;
+  }
+  #zen-requirements p:nth-of-type(1)::after {
+    content: "";
+    background: url(svg/human-footprints.svg);
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin-right: 1ch;
+    position: relative;
+    top: 15px;
+  }
+}
+
+footer {
   font-family: "Architects Daughter", cursive;
   background-color: #726E75;
   display: flex;
   justify-content: center;
+  grid-row-end: 4;
+  position: relative;
+  bottom: -1210px;
 }
 @media screen and (min-width: 52em) {
-  #zen-preamble footer {
+  footer {
     grid-column: 1/3;
+    grid-row: auto;
+    bottom: -1350px;
   }
 }
-#zen-preamble footer a {
+footer a {
   padding: 1em;
+  color: #ffffff;
 }
-#zen-preamble .page-wrapper {
+
+.page-wrapper {
   display: grid;
 }
 @media screen and (min-width: 52em) {
-  #zen-preamble .page-wrapper {
-    grid-template-columns: 2fr 1fr;
-  }
-  #zen-preamble .page-wrapper .main.supporting {
+  .page-wrapper .main.supporting {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1;
   }
-  #zen-preamble .page-wrapper .intro {
+  .page-wrapper .main.supporting div {
+    padding-bottom: 25px;
+  }
+  .page-wrapper .intro {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column: 1/3;
   }
 }
-#zen-preamble .wrapper {
-  background-color: #dddfdf;
+@media screen and (min-width: 52em) and (min-width: 52em) {
+  .page-wrapper .intro {
+    grid-template-columns: auto;
+    grid-column: auto;
+  }
 }
-#zen-preamble a.designer-name {
+
+.wrapper {
+  background-color: #e6e6e6;
+}
+@media screen and (min-width: 52em) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+nav ul,
+.zen-resources {
+  list-style-type: none;
+}
+nav ul li:nth-of-type(1) .design-name::before,
+.zen-resources li:nth-of-type(1) .design-name::before {
+  content: url(svg/seashell.svg);
+}
+nav ul li:nth-of-type(2) .design-name::before,
+.zen-resources li:nth-of-type(2) .design-name::before {
+  content: url(svg/surfboard.svg);
+}
+nav ul li:nth-of-type(3) .design-name::before,
+.zen-resources li:nth-of-type(3) .design-name::before {
+  content: url(svg/crab.svg);
+}
+nav ul li:nth-of-type(4) .design-name::before,
+.zen-resources li:nth-of-type(4) .design-name::before {
+  content: url(svg/sunbed.svg);
+}
+nav ul li:nth-of-type(5) .design-name::before,
+.zen-resources li:nth-of-type(5) .design-name::before {
+  content: url(svg/turtle.svg);
+}
+nav ul li:nth-of-type(6) .design-name::before,
+.zen-resources li:nth-of-type(6) .design-name::before {
+  content: url(svg/jellyfish.svg);
+}
+nav ul li:nth-of-type(7) .design-name::before,
+.zen-resources li:nth-of-type(7) .design-name::before {
+  content: url(svg/beach-ball.svg);
+}
+nav ul li:nth-of-type(8) .design-name::before,
+.zen-resources li:nth-of-type(8) .design-name::before {
+  content: url(svg/sand-bucket.svg);
+}
+nav ul .design-name::before,
+.zen-resources .design-name::before {
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-right: 1ch;
+}
+@media screen and (min-width: 52em) {
+  nav ul .design-name::before,
+.zen-resources .design-name::before {
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+  }
+}
+nav ul li,
+.zen-resources li {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+  font-size: 20px;
+  color: #b2b2b2;
+  padding: 10px;
+}
+nav ul a,
+.zen-resources a {
+  display: flex;
   text-decoration: none;
+  color: #726E75;
+  grid-column: 1/4;
+}
+
+.zen-resources {
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 52em) {
+  .zen-resources {
+    margin-top: 0;
+  }
+  .zen-resources ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+.zen-resources li a::before {
+  content: url(svg/seashell.svg);
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin-right: 1ch;
+}
+
+@media screen and (min-width: 52em) {
+  nav ul {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 52em) {
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  nav ul li a {
+    flex-direction: column;
+  }
+}
+
+.view-css abbr {
+  margin-left: 1ch;
+}
+
+.css-resources abbr {
+  margin-right: 1ch;
+}
+
+.designer-name {
+  margin-left: 1ch;
+  color: #b2b2b2;
+  font-size: 18px;
+  grid-column: 2/4;
+}
+@media screen and (min-width: 52em) {
+  .designer-name {
+    color: #ffffff;
+    margin-left: 0;
+  }
+}
+.designer-name:hover {
+  color: #eddfd4;
+  background-color: #726E75;
+  width: fit-content;
+}
+
+.design-name {
+  grid-column: 1/4;
+  color: #726E75;
+  font-size: 22px;
+}
+
+.design-selection {
+  margin-top: -54px;
+}
+@media screen and (min-width: 52em) {
+  .design-selection {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-column: 1/3;
+  }
+  .design-selection h3 {
+    background: linear-gradient(90deg, #eddfd4 30%, #726E75);
+  }
+  .design-selection ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+  .design-selection ul li {
+    padding-left: 30px;
+    height: 275px;
+    padding-top: 50px;
+  }
+  .design-selection ul li:nth-of-type(1),
+.design-selection ul li:nth-of-type(5) {
+    background: #ffffff;
+  }
+  .design-selection ul li:nth-of-type(1) a.designer-name,
+.design-selection ul li:nth-of-type(5) a.designer-name {
+    color: #726E75;
+    max-width: 80%;
+  }
+  .design-selection ul li:nth-of-type(1) a.designer-name:hover,
+.design-selection ul li:nth-of-type(5) a.designer-name:hover {
+    color: #eddfd4;
+    background-color: #726E75;
+    width: fit-content;
+  }
+  .design-selection ul li:nth-of-type(2),
+.design-selection ul li:nth-of-type(6) {
+    background: #dddfdf;
+  }
+  .design-selection ul li:nth-of-type(3),
+.design-selection ul li:nth-of-type(7) {
+    background: #eddfd4;
+  }
+  .design-selection ul li:nth-of-type(4),
+.design-selection ul li:nth-of-type(8) {
+    background: #9c999f;
+  }
+}
+
+#design-archives .indicator {
+  display: none;
+}
+#design-archives li a {
+  flex-direction: row;
+}
+#design-archives li a::before {
+  content: url(svg/seashell.svg);
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin-right: 1ch;
+}
+@media screen and (min-width: 52em) {
+  #design-archives nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 52em) and (min-width: 52em) {
+  #design-archives::after {
+    content: "";
+    background: url(images/walkonbeach.jpg) no-repeat fixed center;
+    background-size: cover;
+    width: 200%;
+    height: 678px;
+    display: flex;
+    position: relative;
+    top: -190px;
+    opacity: 0.25;
+    pointer-events: none;
+    margin-bottom: -190px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
