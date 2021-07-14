@@ -95,6 +95,7 @@ h4 {
   display: block;
   margin: 0 auto;
   z-index: 100;
+  animation: fadeIn 5s;
 }
 @media screen and (min-width: 52em) {
   .summary {
@@ -105,6 +106,7 @@ h4 {
     margin: 0;
     width: auto;
     padding-bottom: 25px;
+    animation: none;
   }
 }
 
@@ -137,6 +139,7 @@ p {
   margin: 0 auto;
   max-width: 275px;
   margin-bottom: -35%;
+  animation: fadeIn 5s;
 }
 @media screen and (min-width: 52em) {
   #zen-preamble h3::before {
@@ -192,13 +195,17 @@ h3 {
   }
   #zen-requirements p:nth-of-type(1)::after {
     content: "";
-    background: url(svg/human-footprints.svg);
+    background: url(svg/human-footprints.svg) no-repeat;
     height: 40px;
     width: 100%;
     display: block;
     margin-right: 1ch;
     position: relative;
     top: 15px;
+  }
+  #zen-requirements p:nth-of-type(1):hover::after {
+    animation: footprints 10s forwards;
+    animation-timing-function: steps(10, end);
   }
 }
 
@@ -479,6 +486,67 @@ nav ul a,
     opacity: 0.25;
     pointer-events: none;
     margin-bottom: -190px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes footprints {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  10% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(20);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(40);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(60);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(70%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(80%);
+  }
+  90% {
+    opacity: 0;
+    transform: translateX(90%);
+    background-repeat: no-repeat;
+  }
+  99% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-repeat: repeat-x;
   }
 }
 
